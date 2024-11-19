@@ -7,8 +7,8 @@ const links = [
 		href: "/",
 	},
 	{
-		label: "Apparel",
-		href: "/category/apparel",
+		label: "Brush",
+		href: "/category/brush",
 	},
 	{
 		label: "Accessories",

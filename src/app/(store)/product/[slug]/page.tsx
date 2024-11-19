@@ -31,7 +31,6 @@ export const generateMetadata = async (props: {
 	const searchParams = await props.searchParams;
 	const params = await props.params;
 	const variants = await Commerce.productGet({ slug: params.slug });
-
 	const selectedVariant = searchParams.variant || variants[0]?.metadata.variant;
 	const product = variants.find((variant) => variant.metadata.variant === selectedVariant);
 	if (!product) {
@@ -69,7 +68,6 @@ export default async function SingleProductPage(props: {
 
 	const t = await getTranslations("/product.page");
 	const locale = await getLocale();
-
 	const category = product.metadata.category;
 
 	return (
